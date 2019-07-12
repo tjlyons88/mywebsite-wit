@@ -1,0 +1,23 @@
+body {
+    background-color: red;
+    color: #000000;
+}
+
+header {
+    background-color: aqua;
+    padding: 20px;
+}
+
+nav {
+    background-color: white;
+    text-align: right;
+    padding: 20px;
+}
+
+main {
+    background-color: orange;
+}
+
+footer {
+    background-color: yellow;
+}
