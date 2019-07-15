@@ -1,31 +1,89 @@
 body {
-    background-color: red;
+    background-color: #ffffff;
     color: #000000;
+    font-family: avenir, ariel, sans-serif;
+    font-size: 16px;
 }
 
-header {
-    background-color: aqua;
-    text-align: center;
-    width: 20%
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: didot;
 }
 
 h1 {
     padding-top: 20px;
     padding-right: 10px;
-    padding-bottom: 100px;
+    margin-bottom: 100px;
     text-align: right;
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
-nav {
+h1 a {
+    color: #000000;
+    text-decoration: none;
+}
+
+h1 a:hover {
+    color: #977942;
+}
+
+.wrapper {
+    width: 2560px;
+    margin: 0 auto;
+}
+
+header {
     background-color: white;
+    text-align: center;
+    width: 20%;
+    float: left;
+}
+
+
+nav {
     text-align: right;
     padding: 10px;
+    font-size: 23px;
+    line-height: 28px;
+}
+
+nav ul {}
+
+nav ul li {}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #977942;
 }
 
 main {
-    background-color: orange;
+    min-height: 1600px;
+    background-color: red;
+    background-image: url(../images/churchillhouse.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main h2 {
+    text-align: right;
+    color: white;
 }
 
 footer {
-    background-color: yellow;
+    text-align: center;
+    width: 20%;
+    float: left;
 }
+
+footer li a img {}
