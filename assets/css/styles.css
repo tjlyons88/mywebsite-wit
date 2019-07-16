@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans|Rufina:400,700&display=swap');
+
 body {
-    background-color: #ffffff;
+    background-color: #F8F9F9;
     color: #212121;
-    font-family: avenir, ariel, sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     font-size: 16px;
 }
 
@@ -12,8 +14,7 @@ h4,
 h5,
 h6,
 nav {
-    font-family: didot;
-
+    font-family: 'Rufina', serif;
 }
 
 h1 {
@@ -45,7 +46,7 @@ h1 a:hover {
 }
 
 header {
-    background-color: #ffffff;
+    background-color: #F8F9F9;
     text-align: center;
     width: 20%;
     float: left;
@@ -116,7 +117,7 @@ h2 {
 
 h3 {
     text-align: right;
-    color: #ffffff;
+    color: #F8F9F9;
     font-size: 36px;
     padding-top: 190px;
     padding-right: 200px;
@@ -136,12 +137,17 @@ h4 {
 
 main p {
     text-align: left;
-    color: #ffffff;
+    color: #F8F9F9;
     padding-left: 1000px;
     padding-right: 500px;
     padding-top: 10px;
     font-size: 24px;
     line-height: 30px
+}
+
+main p a {
+    text-decoration: underline;
+    color: #F8F9F9;
 }
 
 .p2 {
@@ -164,15 +170,16 @@ main p {
 }
 
 footer {
-    z-index: 90;
+    z-index: 100;
+    width: 2460px;
     position: absolute;
     top: 1600px;
     text-align: center;
     padding: 50px;
-    color: #000000;
+    color: #ffffff;
     border-top-style: solid;
     border-width: 3px;
     border-color: gainsboro;
-    background-color: #ffffff;
+    background-color: #977942;
     object-fit: fill;
 }
