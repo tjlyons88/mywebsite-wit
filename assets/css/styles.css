@@ -27,7 +27,7 @@ h1 {
     margin-top: 60px;
     margin-bottom: 150px;
     text-align: right;
-    font-size: 70px;
+    font-size: 95%;
     font-weight: bold;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -52,6 +52,8 @@ header {
     position: sticky;
     top: 0;
     bottom: 0;
+    height: 100vh;
+    z-index: 90;
 }
 
 header a img {
@@ -68,6 +70,7 @@ nav {
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 20px;
+    margin-bottom: 150px;
 }
 
 nav ul {}
@@ -99,7 +102,9 @@ nav ul li a:hover {
     background-size: cover;
 }
 
-main {}
+main {
+    min-height: 100vh;
+}
 
 h2 {
     text-align: right;
@@ -124,17 +129,19 @@ h4 {
     text-align: left;
     color: #977942;
     padding-top: 260px;
+    margin-left: 21%;
     font-size: 70px;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 
 main p {
-    text-align: left;
+    text-align: justify;
     color: #F8F9F9;
     padding-left: 21%;
     padding-right: 20%;
     padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 24px;
     line-height: 30px
 }
@@ -142,21 +149,73 @@ main p {
 main p a {
     text-decoration: underline;
     color: #F8F9F9;
+
 }
 
-.p2 {
-    margin-bottom: 100px;
+.contentlist {
+    text-align: justify;
+    color: #F8F9F9;
+    padding-left: 21%;
+    padding-right: 20%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 24px;
+    line-height: 30px
 }
 
 .gallery {
-    z-index: 100;
-    max-width: 100%;
     position: static;
-    padding-left: 21%;
-    margin-top: 16px;
+    margin-left: 21%;
 }
 
 .gallery img {
+    border-style: solid;
+    border-width: 3px;
+    border-color: #977942;
+    max-width: 100%;
+    display: inline;
+    height: 16vw;
+    width: auto;
+    margin-top: 10px6;
+    margin-bottom: 20px;
+}
+
+.gallery2 {
+    position: static;
+    margin-left: 21%;
+}
+
+.gallery2 img {
+    border-style: solid;
+    border-width: 3px;
+    border-color: #977942;
+    max-width: 100%;
+    display: inline;
+    height: 27.5vw;
+    width: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.portrait {
+    margin-left: 21%;
+}
+
+.portrait img {
+    margin-left: 20px;
+    margin-right: 20%;
+    float: right;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #977942;
+}
+
+.drawings {
+    margin-left: 21%;
+}
+
+.drawings img {
+    height: 18vw;
     border-style: solid;
     border-width: 3px;
     border-color: #977942;
