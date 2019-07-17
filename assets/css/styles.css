@@ -17,6 +17,10 @@ nav {
     font-family: 'Rufina', serif;
 }
 
+.wrapper {
+    height: 100%;
+}
+
 h1 {
     padding-top: 20px;
     padding-right: 10px;
@@ -40,23 +44,20 @@ h1 a:hover {
     color: #977942;
 }
 
-.wrapper {
-    width: 2560px;
-    margin: 0 auto;
-}
-
 header {
     background-color: #F8F9F9;
-    text-align: center;
-    width: 20%;
     float: left;
-    min-height: 1600px;
-    max-height: 1600px;
+    width: 20%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    bottom: 0;
 }
 
 header a img {
     width: 95%;
-    padding-top: 670px
+    vertical-align: bottom;
+    margin: 10px;
 }
 
 nav {
@@ -84,31 +85,26 @@ nav ul li a:hover {
     color: #977942;
 }
 
-main {
-    min-height: 1600px;
-    max-height: 1600px;
-}
-
 .index {
-    min-height: 1600px;
-    max-height: 1600px;
-    background-image: url(../images/churchillhouse.jpg);
+    background: url(../images/churchillhouse.jpg);
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
 }
 
-.thehouse {
-    min-height: 1600px;
-    max-height: 1600px;
-    background-image: url(../images/churchillhousetwo.jpg);
+.contentpage {
+    background: url(../images/churchillhousetwo.jpg);
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
 }
+
+main {}
 
 h2 {
     text-align: right;
     color: #977942;
-    padding-right: 200px;
+    padding-right: 10%;
     font-size: 185px;
     font-weight: bold;
     letter-spacing: 2px;
@@ -120,17 +116,15 @@ h3 {
     color: #F8F9F9;
     font-size: 36px;
     padding-top: 190px;
-    padding-right: 200px;
+    padding-right: 10%;
     padding-bottom: 200px;
 }
 
 h4 {
     text-align: left;
     color: #977942;
-    padding-left: 540px;
     padding-top: 260px;
     font-size: 70px;
-    font-weight: bold;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
@@ -138,8 +132,8 @@ h4 {
 main p {
     text-align: left;
     color: #F8F9F9;
-    padding-left: 1000px;
-    padding-right: 500px;
+    padding-left: 21%;
+    padding-right: 20%;
     padding-top: 10px;
     font-size: 24px;
     line-height: 30px
@@ -154,26 +148,22 @@ main p a {
     margin-bottom: 100px;
 }
 
-.images {
-    margin: 10px;
+.gallery {
     z-index: 100;
-    position: absolute;
-    top: 900px;
-    margin-left: 45px;
+    max-width: 100%;
+    position: static;
+    padding-left: 21%;
+    margin-top: 16px;
 }
 
-.images img {
-    border-width: 3px;
+.gallery img {
     border-style: solid;
+    border-width: 3px;
     border-color: #977942;
-    display: inline;
 }
 
 footer {
     z-index: 100;
-    width: 2460px;
-    position: absolute;
-    top: 1600px;
     text-align: center;
     padding: 50px;
     color: #ffffff;
@@ -181,5 +171,7 @@ footer {
     border-width: 3px;
     border-color: gainsboro;
     background-color: #977942;
-    object-fit: fill;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
 }
