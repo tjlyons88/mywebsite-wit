@@ -22,12 +22,13 @@ nav {
 }
 
 h1 {
-    padding-top: 20px;
-    padding-right: 10px;
-    margin-top: 60px;
+    margin-left: .5vw;
+    margin-right: .5vw;
+    margin-top: 10px;
     margin-bottom: 150px;
     text-align: right;
-    font-size: 95%;
+    font-size: 2.5vw;
+    font-size-adjust: auto;
     font-weight: bold;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -48,35 +49,34 @@ header {
     background-color: #F8F9F9;
     float: left;
     width: 20%;
+    height: 100vh;
     position: -webkit-sticky;
     position: sticky;
-    top: 0;
     bottom: 0;
-    height: 100vh;
+    top: 0;
     z-index: 90;
+    min-width: 200px;
 }
 
 header a img {
-    width: 95%;
-    vertical-align: bottom;
-    margin: 10px;
+    width: 90%;
+    position: -webkit-sticky;
+    position: sticky;
+    margin-left: .5vw;
+    margin-right: .5vw;
+    margin-top: 15vh;
 }
 
 nav {
     text-align: right;
-    padding-right: 20px;
-    font-size: 20px;
+    font-size: 1vw;
+    word-wrap: break-word;
+    margin-left: .5vw;
+    margin-right: .5vw;
     line-height: 28px;
     text-transform: uppercase;
     font-weight: bold;
-    letter-spacing: 20px;
-    margin-bottom: 150px;
-}
-
-nav ul {}
-
-nav ul li {
-    line-height: 50px;
+    letter-spacing: 3px;
 }
 
 nav ul li a {
@@ -93,6 +93,7 @@ nav ul li a:hover {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    background-position: right;
 }
 
 .contentpage {
@@ -100,6 +101,7 @@ nav ul li a:hover {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    background-position: right;
 }
 
 main {
@@ -110,7 +112,7 @@ h2 {
     text-align: right;
     color: #977942;
     padding-right: 10%;
-    font-size: 185px;
+    font-size: 6vw;
     font-weight: bold;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -119,18 +121,20 @@ h2 {
 h3 {
     text-align: right;
     color: #F8F9F9;
-    font-size: 36px;
-    padding-top: 190px;
+    font-size: 16px;
+    padding-top: 10vw;
     padding-right: 10%;
-    padding-bottom: 200px;
+    padding-bottom: 10vw;
+    margin-left: 50%;
 }
 
 h4 {
     text-align: left;
     color: #977942;
-    padding-top: 260px;
     margin-left: 21%;
-    font-size: 70px;
+    margin-bottom: 10px;
+    padding-top: 10%;
+    font-size: 4vw;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
@@ -142,8 +146,8 @@ main p {
     padding-right: 20%;
     padding-top: 10px;
     padding-bottom: 10px;
-    font-size: 24px;
-    line-height: 30px
+    font-size: 16px;
+    line-height: 30px;
 }
 
 main p a {
@@ -159,7 +163,7 @@ main p a {
     padding-right: 20%;
     padding-top: 10px;
     padding-bottom: 10px;
-    font-size: 24px;
+    font-size: 16px;
     line-height: 30px
 }
 
@@ -170,7 +174,7 @@ main p a {
 
 .gallery img {
     border-style: solid;
-    border-width: 3px;
+    border-width: 1px;
     border-color: #977942;
     max-width: 100%;
     display: inline;
@@ -187,7 +191,7 @@ main p a {
 
 .gallery2 img {
     border-style: solid;
-    border-width: 3px;
+    border-width: 1px;
     border-color: #977942;
     max-width: 100%;
     display: inline;
@@ -199,15 +203,15 @@ main p a {
 
 .portrait {
     margin-left: 21%;
+    margin-right: 20%;
 }
 
 .portrait img {
-    margin-left: 20px;
-    margin-right: 20%;
-    float: right;
     border-style: solid;
-    border-width: 3px;
+    border-width: 1px;
     border-color: #977942;
+    height: 30vw;
+    max-height: 300px;
 }
 
 .drawings {
@@ -217,14 +221,14 @@ main p a {
 .drawings img {
     height: 18vw;
     border-style: solid;
-    border-width: 3px;
+    border-width: 1px;
     border-color: #977942;
 }
 
 footer {
     z-index: 100;
     text-align: center;
-    padding: 50px;
+    padding: 10px;
     color: #ffffff;
     border-top-style: solid;
     border-width: 3px;
@@ -234,3 +238,172 @@ footer {
     position: sticky;
     bottom: 0;
 }
+
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 25px;
+    }
+
+    nav {
+        font-size: 10px;
+    }
+
+    main p {
+        padding-left: 210px;
+    }
+
+    .contentlist {
+        padding-left: 210px;
+    }
+
+    .portrait {
+        margin-left: 210px;
+    }
+
+    h4 {
+        margin-left: 210px;
+    }
+
+    .drawings {
+        margin-left: 210px;
+    }
+
+    .gallery {
+        margin-left: 210px;
+    }
+
+    .gallery2 {
+        margin-left: 210px;
+    }
+}
+
+@media (max-width: 535px) {
+    header {
+        background-color: #F8F9F9;
+        float: none;
+        width: 100%;
+        height: auto;
+        position: relative;
+        bottom: 0;
+        top: 0;
+        z-index: 90;
+    }
+
+    h1 {
+        margin-left: .5vw;
+        margin-right: .5vw;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 30px;
+        font-size-adjust: auto;
+        font-weight: bold;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #212121;
+        text-decoration: none;
+    }
+
+    nav {
+        text-align: center;
+        font-size: 10px;
+        word-wrap: break-word;
+        margin-left: .5vw;
+        margin-right: .5vw;
+        line-height: 28px;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 3px;
+    }
+
+    nav li {
+        display: inline;
+        border-color: #977942;
+        border-left-style: solid;
+        border-left-width: 1px;
+        border-right-style: solid;
+        border-right-width: 1px;
+        padding-left: 5px;
+    }
+
+    header a img {
+        display: none;
+    }
+
+    h2 {
+        text-align: center;
+        color: #977942;
+        padding-right: 0%;
+        font-size: 10vw;
+        font-weight: bold;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+    h3 {
+        text-align: center;
+        color: #F8F9F9;
+        font-size: 16px;
+        padding-top: 100px;
+        padding-right: 0px;
+        padding-bottom: 200px;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    main p {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .contentlist {
+        padding-left: 10%;
+    }
+
+    .portrait {
+        margin-left: 10%;
+    }
+
+    h4 {
+        margin-left: 10%;
+    }
+
+    .drawings {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .drawings img {
+        height: auto;
+        width: 80vw;
+    }
+
+    .gallery {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .gallery img {
+        display: block;
+        height: auto;
+        max-width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+
+
+    }
+
+    .gallery2 {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .gallery2 img {
+        display: block;
+        height: auto;
+        max-width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+
+
+    }
