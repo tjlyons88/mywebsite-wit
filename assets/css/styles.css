@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans|Rufina:400,700&display=swap');
+/*font family imported from google fonts*/
 
 body {
     background-color: #F8F9F9;
+    /*shade warmer than white to be easier on the eye*/
     color: #212121;
+    /*shade warmer than black to be easier on the eye*/
     font-family: 'Nunito Sans', sans-serif;
     font-size: 16px;
 }
@@ -15,19 +18,24 @@ h5,
 h6,
 nav {
     font-family: 'Rufina', serif;
+    /*all share the same font family*/
 }
 
 .wrapper {
     height: 100%;
 }
 
+/*HEADER STYLING*/
+
 h1 {
     margin-left: .5vw;
     margin-right: .5vw;
+    /*slight margin either side for space*/
     margin-top: 10px;
     margin-bottom: 100px;
     text-align: right;
     font-size: 2.5vw;
+    /*font size as percentage of view width for flex*/
     font-size-adjust: auto;
     font-weight: bold;
     letter-spacing: 2px;
@@ -43,6 +51,7 @@ h1 a {
 
 h1 a:hover {
     color: #977942;
+    /*colour pulled from boyd foundation logo to help create link*/
 }
 
 header {
@@ -50,7 +59,9 @@ header {
     float: left;
     width: 20%;
     height: 100vh;
+    /*floated header left and stretched to height to create a sidebar hybrid*/
     position: -webkit-sticky;
+    /*header stays static while content scrolls*/
     position: sticky;
     bottom: 0;
     top: 0;
@@ -68,7 +79,7 @@ header a img {
 nav {
     text-align: right;
     font-size: 1vw;
-    word-wrap: break-word;
+    /*font size as percentage of view width for flex - used throughout with rules in place to stop shrinking down too far*/
     margin-left: .5vw;
     margin-right: .5vw;
     line-height: 28px;
@@ -86,16 +97,20 @@ nav ul li a:hover {
     color: #977942;
 }
 
+/*DIVS FOR MAIN CONTAINER STYLING*/
+
 .index {
     background: url(../images/churchillhouse.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: right;
+    /*pinned to right of page so text stays on dark part of picture when screen size adjusted*/
 }
 
 .contentpage {
     background: url(../images/churchillhousetwo.jpg);
+    /*div used for different background images for index/content*/
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -104,7 +119,10 @@ nav ul li a:hover {
 
 main {
     min-height: 100vh;
+    /*main always stretches to full height*/
 }
+
+/*TYPOGRAPHY WITHIN MAIN CONTAINER*/
 
 h2 {
     text-align: right;
@@ -138,11 +156,14 @@ h4 {
     text-transform: uppercase;
 }
 
+/*MAIN CONTENT*/
+
 main p {
     text-align: justify;
     color: #F8F9F9;
     padding-left: 21%;
     padding-right: 20%;
+
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 16px;
@@ -160,11 +181,14 @@ main p a {
     color: #F8F9F9;
     padding-left: 21%;
     padding-right: 20%;
+    /*margins to keep text from flowing behind header*/
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 16px;
     line-height: 30px
 }
+
+/*IMAGE STYLING DIVS*/
 
 .gallery {
     position: static;
@@ -178,6 +202,7 @@ main p a {
     max-width: 100%;
     display: inline;
     height: 16vw;
+    /*height as percentage of view width to flex images*/
     width: auto;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -224,6 +249,8 @@ main p a {
     border-color: #977942;
 }
 
+/*FOOTER STYLING*/
+
 footer {
     z-index: 100;
     text-align: center;
@@ -236,7 +263,12 @@ footer {
     position: -webkit-sticky;
     position: sticky;
     bottom: 0;
+    /*Footer locked to bottom and always at bottom of window. Used stick plus z-index.*/
 }
+
+/*FLEX STYLING*/
+
+/*Selected break points based on styling needs rather than common device dimensions as I aimed to make everything as flexible as possible*/
 
 @media (max-width: 1000px) {
     h1 {
@@ -276,6 +308,9 @@ footer {
     }
 }
 
+/*header bar min width 200px - margins needed to be changed from percentage of full width to definite px value and font sizes locked so as not to shrink too small in relation to vw*/
+
+/*-----header moved-----*/
 @media (max-width: 535px),
 (max-height: 350px) {
     header {
@@ -287,6 +322,8 @@ footer {
         bottom: 0;
         top: 0;
         z-index: 90;
+        /*when width of window too narrow for header and content, header moves to top and spans the width of the page. also for when screen not tall enough*/
+
     }
 
     h1 {
@@ -326,9 +363,14 @@ footer {
         padding-left: 5px;
     }
 
+    /*with menu options now inline, border added to sides to help compartmentalise features*/
+
+
     header a img {
         display: none;
     }
+
+    /*logo removed to ease clutter*/
 
     h2 {
         text-align: center;
@@ -355,6 +397,8 @@ footer {
         padding-left: 10%;
         padding-right: 10%;
     }
+
+    /*margin on content reduced for narrower space*/
 
     .contentlist {
         padding-left: 10%;
@@ -404,3 +448,5 @@ footer {
 
 
     }
+
+    /*headings, images and text all centered to create a simplified viewing experience on narrower screens*/
